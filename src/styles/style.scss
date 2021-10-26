@@ -1,0 +1,56 @@
+@import "./global.scss";
+
+header {
+  border: 1px solid red;
+  height: 14vh;
+  ul {
+    height: 14vh;
+    border: 1px solid blue;
+    li {
+      a {
+        line-height: 22px;
+        font-weight: 400;
+        font-size: 17px;
+        letter-spacing: 0.075px;
+        color: #888;
+        margin: 30px;
+        text-decoration: none;
+        &:hover {
+          color: darken($color: #888, $amount: 20);
+        }
+      }
+    }
+  }
+  .circle {
+    height: 30px;
+    width: 30px;
+    border-radius: 50px;
+    border: 1px solid red;
+  }
+}
+
+.movie-info {
+  padding: 20px;
+  margin-top: 10px;
+  border-radius: 8px;
+  border: 1px solid blue;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 39%,
+    rgba(0, 0, 0, 0.25253851540616246) 100%,
+    rgba(0, 0, 0, 1) 100%
+  );
+  video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    background-size: cover;
+    border: 1px solid red;
+  }
+}
