@@ -52,5 +52,15 @@ header {
     z-index: -100;
     background-size: cover;
     border: 1px solid red;
+    background-color: red;
+  }
+  .video-film {
+    margin-top: -20px;
+    padding: 0;
+    opacity: 0.4;
+    iframe {
+      border-radius: 10px;
+      background-color: transparent !important;
+    }
   }
 }
