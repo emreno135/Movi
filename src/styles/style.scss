@@ -1,11 +1,13 @@
 @import "./global.scss";
 
 header {
-  border: 1px solid red;
   height: 14vh;
+  #logo {
+    margin-right: 30px;
+  }
   ul {
-    height: 14vh;
-    border: 1px solid blue;
+    margin: 0;
+    padding: 0;
     li {
       a {
         line-height: 22px;
@@ -13,7 +15,7 @@ header {
         font-size: 17px;
         letter-spacing: 0.075px;
         color: #888;
-        margin: 30px;
+        margin-right: 35px;
         text-decoration: none;
         &:hover {
           color: darken($color: #888, $amount: 20);
@@ -27,40 +29,24 @@ header {
     border-radius: 50px;
     border: 1px solid red;
   }
+  .nav-right {
+    height: 14vh;
+  }
 }
 
 .movie-info {
-  padding: 20px;
-  margin-top: 10px;
   border-radius: 8px;
-  border: 1px solid blue;
-  background: rgb(0, 0, 0);
-  background: linear-gradient(
-    90deg,
-    rgba(0, 0, 0, 1) 39%,
-    rgba(0, 0, 0, 0.25253851540616246) 100%,
-    rgba(0, 0, 0, 1) 100%
-  );
-  video {
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    width: auto;
-    height: auto;
-    z-index: -100;
-    background-size: cover;
-    border: 1px solid red;
-    background-color: red;
-  }
-  .video-film {
-    margin-top: -20px;
+  .movi-desc {
+    background-color: black;
+    margin: 0;
     padding: 0;
-    opacity: 0.4;
-    iframe {
-      border-radius: 10px;
-      background-color: transparent !important;
+    border-radius: 8px;
+    video {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      border-radius: 8px;
     }
   }
 }

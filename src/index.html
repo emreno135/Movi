@@ -23,93 +23,82 @@
     <title>Filmbekcisi</title>
   </head>
   <body>
-    <header class="d-flex align-items-center justify-content-between">
-      <div class="navbar">
-        <ul class="d-flex align-items-center">
-          <li>
-            <a href=""
-              ><img
-                height="50"
-                width="180"
-                src="./images/filmbekcisi_logo.png"
-                alt=""
-            /></a>
-          </li>
-          <li>
-            <a href="">Season</a>
-          </li>
-          <li>
-            <a href="">Single</a>
-          </li>
-          <li>
-            <a href="">Action</a>
-          </li>
-          <li>
-            <a href="">Video</a>
-          </li>
-          <li>
-            <a href="">Landing</a>
-          </li>
-        </ul>
-      </div>
-      <div class="d-flex">
-        <div class="mx-2">
-          <form>
-            <input
-              class="form-control shadow-none"
-              type="text"
-              placeholder="Search"
-              autocomplete="off"
-            />
-          </form>
+    <!-- Header Section -->
+    <header>
+      <div class="container">
+        <div class="row">
+          <div class="navbar col-md-8 d-flex">
+            <nav>
+              <ul class="d-flex align-items-center">
+                <li>
+                  <a href="" id="logo"
+                    ><img
+                      height="50"
+                      width="180"
+                      src="./images/filmbekcisi_logo.png"
+                      alt="logo"
+                  /></a>
+                </li>
+                <li>
+                  <a href="">Season</a>
+                </li>
+                <li>
+                  <a href="">Single</a>
+                </li>
+                <li>
+                  <a href="">Action</a>
+                </li>
+                <li>
+                  <a href="">Video</a>
+                </li>
+                <li>
+                  <a href="">Landing</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div
+            class="
+              nav-right
+              col-md-4
+              d-flex
+              justify-content-end
+              align-items-center
+            "
+          >
+            <div class="mx-3">
+              <form>
+                <input
+                  class="form-control shadow-none"
+                  type="text"
+                  placeholder="Search"
+                  autocomplete="off"
+                />
+              </form>
+            </div>
+            <div>
+              <img src="./images/user.png" alt="profile" />
+            </div>
+          </div>
         </div>
-        <div class="circle mx-2"></div>
       </div>
     </header>
+    <!-- Header Section -->
+
+    <!-- Movie Content Section -->
     <section class="movie-info container">
       <div class="row">
-        <div class="col-md-6">
-          <div>
-            <span>IMDb 6.7</span>
-            <h1>MADE IN HEAVEN</h1>
-            <h1>SEASON 1</h1>
-            <div class="d-flex">
-              <p>2020</p>
-              <p>HD</p>
-              <p>16+</p>
-              <p>2h 20min</p>
-            </div>
-            <div>
-              <p>
-                Radhe is a singing prodigy determined to follow in the classical
-                footsteps of his grandfather. Tamanna is a YouTube pop sensation
-                desperate to become .
-              </p>
-            </div>
-            <div>
-              <button class="btn btn-primary">Watch Now</button>
-              <button class="btn">+</button>
-              <button class="btn">&</button>
-            </div>
-          </div>
-        </div>
-        <div class="video col-md-6">
-          <div class="video-film">
-            <iframe
-              width="560"
-              height="315"
-              src="https://s6.moviegate.me/vod/v1xfaaccefd"
-              title="YouTube video player"
-              frameborder="0"
-              autoplay
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-              allowtransparency="true"
-            ></iframe>
-          </div>
+        <div class="movi-desc col-md-12">
+          <video autoplay muted>
+            <source src="./movies/deneme.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </section>
+    <!-- Movie Content Section -->
+
+    <!-- Bootstrap Cdn -->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"
       integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"

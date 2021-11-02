@@ -18,6 +18,10 @@ function img() {
   return src("./src/images/*.png").pipe(dest("./dist/images"));
 }
 
+function movie() {
+  return src("./src/movies/*.mp4").pipe(dest("./dist/movies"));
+}
+
 function serve() {
   browserSync.init({
     server: {
@@ -27,6 +31,7 @@ function serve() {
   watch("./src/*.html", html).on("change", browserSync.reload);
   watch("./src/styles/*.scss", scss).on("change", browserSync.reload);
   watch("./src/images", img).on("change", browserSync.reload);
+  watch("./src/movies", movie).on("change", browserSync.reload);
 }
 
-exports.default = series(html, scss, img, [serve]);
+exports.default = series(html, scss, img, movie, [serve]);
