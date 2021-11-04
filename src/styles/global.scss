@@ -1,13 +1,25 @@
-* {
-  box-sizing: border-box;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
+$primary-button-bg: #6432d8;
+$primary-button-darken-value: 20;
 
 body {
   font-size: 16px;
+  .movie-btn {
+    .btn-primary {
+      background-color: $primary-button-bg;
+      border-color: $primary-button-bg;
+      cursor: pointer !important;
+      padding: 10px 15px;
+      &:hover {
+        border: 1px solid
+          darken(
+            $color: $primary-button-bg,
+            $amount: $primary-button-darken-value
+          ) !important;
+        background-color: darken(
+          $color: $primary-button-bg,
+          $amount: $primary-button-darken-value
+        );
+      }
+    }
+  }
 }
