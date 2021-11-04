@@ -24,7 +24,7 @@
   </head>
   <body>
     <!-- Header Section -->
-    <header>
+    <header class="w-100">
       <div class="container">
         <div class="row">
           <div class="navbar col-md-8 d-flex">
@@ -33,11 +33,13 @@
                 <li>
                   <a href="" id="logo"
                     ><img
+                      class="block"
+                      width="150"
                       height="50"
-                      width="180"
                       src="./images/filmbekcisi_logo.png"
-                      alt="logo"
-                  /></a>
+                      alt=""
+                    />
+                  </a>
                 </li>
                 <li>
                   <a href="">Season</a>
@@ -88,9 +90,78 @@
     <!-- Movie Content Section -->
     <section class="movie-info container">
       <div class="row">
-        <div class="movi-desc col-md-12">
-          <video autoplay muted>
-            <source src="./movies/deneme.mp4" type="video/mp4" />
+        <div class="movi-desc col-md-12 w-100 position-relative">
+          <div class="movies position-absolute">
+            <div>
+              <span class="imdb">IMDb 6.7</span>
+              <h1 class="movie-header">MADE IN HEAVEN</h1>
+            </div>
+            <div class="movie-tag">
+              <span class="season">SEASON 1</span>
+              <span class="year">2020</span>
+              <span class="movie-hd">HD</span>
+              <span class="age">16+</span>
+              <span class="total-time">2 h 20 min</span>
+            </div>
+            <div class="movie-text">
+              <p>
+                Radhe is a singing prodigy determined to follow in the classical
+                footsteps of his grandfather. Tamanna is a YouTube pop sensation
+                desperate to become
+              </p>
+            </div>
+            <div class="movie-btn">
+              <a href="" class="btn btn-primary"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  fill="currentColor"
+                  class="bi bi-play-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"
+                  />
+                </svg>
+                Watch Now</a
+              >
+              <button class="btn">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  class="text-white"
+                  fill="currentColor"
+                  class="bi bi-plus-lg"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 2a.5.5 0 0 1 .5.5v5h5a.5.5 0 0 1 0 1h-5v5a.5.5 0 0 1-1 0v-5h-5a.5.5 0 0 1 0-1h5v-5A.5.5 0 0 1 8 2Z"
+                  />
+                </svg>
+              </button>
+              <button class="heart btn shadow-none">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="20"
+                  height="20"
+                  class="text-white"
+                  fill="currentColor"
+                  class="bi bi-heart-fill"
+                  viewBox="0 0 16 16"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"
+                  />
+                </svg>
+              </button>
+            </div>
+          </div>
+          <video autoplay muted loop>
+            <source height="100" src="./movies/deneme.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>

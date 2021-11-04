@@ -2,6 +2,14 @@
 
 header {
   height: 14vh;
+  background-color: #ffffff;
+  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.3);
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px,
+    rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
   #logo {
     margin-right: 30px;
   }
@@ -35,17 +43,79 @@ header {
 }
 
 .movie-info {
+  margin-top: 17vh;
   border-radius: 8px;
+
   .movi-desc {
     background-color: black;
     margin: 0;
     padding: 0;
     border-radius: 8px;
+    height: 200px;
+    .movies {
+      padding: 20px;
+      width: 50%;
+      margin-left: 20px;
+      margin-top: 175px;
+      z-index: 2;
+      .imdb {
+        border: 1px solid #fff;
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 10px;
+        color: white;
+      }
+      .movie-header {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        color: #fff;
+      }
+      .movie-tag {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        .season {
+          color: #fff;
+        }
+        .year {
+          color: #fff;
+        }
+        .movie-hd {
+          color: #fff;
+        }
+        .age {
+          color: #fff;
+        }
+        .total-time {
+          color: #fff;
+        }
+      }
+      .movie-text {
+        p {
+          letter-spacing: 1.5px;
+          line-height: 30px;
+          color: white;
+        }
+      }
+      .movie-btn {
+        .btn-primary {
+          background-color: #6432d8;
+          border-color: #6432d8;
+          cursor: pointer !important;
+          padding: 10px 15px;
+          &:hover {
+            border: 1px solid darken($color: #6432d8, $amount: 20) !important;
+            background-color: darken($color: #6432d8, $amount: 20);
+          }
+        }
+      }
+    }
+
     video {
       margin: 0;
       padding: 0;
-      height: 100%;
-      width: 100%;
+      /* override other styles to make responsive */
+      width: 100% !important;
+      height: auto !important;
       border-radius: 8px;
     }
   }
