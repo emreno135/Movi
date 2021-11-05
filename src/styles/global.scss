@@ -7,8 +7,15 @@ body {
     .btn-primary {
       background-color: $primary-button-bg;
       border-color: $primary-button-bg;
+      min-width: 200px;
+      line-height: 40px;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
       cursor: pointer !important;
       padding: 10px 15px;
+      border-radius: 0.3rem !important;
       &:hover {
         border: 1px solid
           darken(

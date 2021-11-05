@@ -1,4 +1,28 @@
+@charset "UTF-8";
+/*-----------------------------------------------------------
+    Theme Name: Filmbekcisi
+    Theme URI: http://www.filmbekcisi.com/
+    Description: Mobile Template
+    Version: 1.0.0
+-------------------------------------------------------------*/
+/*-----------------------------------------------------------
+    Table of Content: 
+
+
+    2. Bootstrap CSS
+    1. Abstract
+    3. Base
+    4. Component
+    5. Pages
+    7. Header
+    8. Footer
+
+
+
+*/
 @import "./global.scss";
+$header-h: 14vh;
+$margint-h: 641px;
 
 html {
   -webkit-box-sizing: border-box;
@@ -43,15 +67,31 @@ html {
   border-radius: 8px;
 }
 
+@mixin flexbox {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+}
+
+@mixin items-center {
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
 header {
-  height: 14vh;
+  height: $header-h;
   background-color: #ffffff;
   border-bottom: 1px solid rgba($color: #000000, $alpha: 0.3);
   @include header-shadow;
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 3;
   #logo {
     margin-right: 30px;
   }
@@ -86,8 +126,8 @@ header {
 
 .movie-info {
   margin-top: 17vh;
+  height: $margint-h;
   @include border-radius-movie-info;
-
   .movi-desc {
     @include border-radius-movie-info;
     background-color: black;
@@ -97,20 +137,27 @@ header {
     .movies {
       padding: 20px;
       width: 50%;
-      margin-left: 20px;
-      margin-top: 175px;
+      height: 641px;
       z-index: 2;
+      @include flexbox();
+      @include items-center();
       .imdb {
         border: 1px solid #fff;
         padding: 5px;
         border-radius: 5px;
         font-size: 10px;
         color: white;
+        font-weight: 700;
       }
       .movie-header {
         margin-top: 10px;
         margin-bottom: 10px;
         color: #fff;
+        font-size: 68px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-weight: 700;
+        line-height: 1.1;
       }
       .movie-tag {
         margin-top: 10px;
@@ -134,8 +181,12 @@ header {
       .movie-text {
         p {
           letter-spacing: 1.5px;
-          line-height: 30px;
           color: white;
+          margin-top: 10px;
+          font-size: 16px;
+          font-weight: 400;
+          color: #fff;
+          line-height: 28px;
         }
       }
     }
@@ -148,4 +199,8 @@ header {
       height: auto !important;
     }
   }
+}
+
+footer {
+  background-color: #111111;
 }
