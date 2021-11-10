@@ -30,7 +30,7 @@ function serve() {
   });
   watch("./src/*.html", html).on("change", browserSync.reload);
   watch("./src/styles/*.scss", scss).on("change", browserSync.reload);
-  watch("./src/images", img).on("change", browserSync.reload);
+  watch("./src/images/*.svg", img).on("change", browserSync.reload);
   watch("./src/movies", movie).on("change", browserSync.reload);
 }
 
